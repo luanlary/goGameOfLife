@@ -17,6 +17,8 @@ const (
 
 type World [][]bool
 
+var p = fmt.Printf
+
 func MakeWorld() World {
 	w := make(World, height)
 	for i := range w {
@@ -40,12 +42,12 @@ func (w World) Display() {
 		for _, cell := range row {
 			switch {
 			case cell:
-				fmt.Printf(greenSquare)
+				p(greenSquare)
 			default:
-				fmt.Printf(brownSquare)
+				p(brownSquare)
 			}
 		}
-		fmt.Printf("\n")
+		p("\n")
 	}
 }
 
