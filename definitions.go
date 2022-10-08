@@ -5,8 +5,8 @@ type GridDefinitions struct {
 	Height         int
 	SleepIteration int
 	AnsiEscapeSeq  string
-	BrownBlocks    string
-	GreenBlocks    string
+	RedBlocks      string
+	BlueBlocks     string
 }
 
 func Setup() GridDefinitions {
@@ -15,7 +15,7 @@ func Setup() GridDefinitions {
 		Height:         20,
 		SleepIteration: 200,
 		AnsiEscapeSeq:  "\033c\x0c",
-		BrownBlocks:    "\xF0\x9F\x9F\xAB",
-		GreenBlocks:    "\xF0\x9F\x9F\xA9",
+		RedBlocks:      "\xF0\x9F\x9F\xA5",
+		BlueBlocks:     "\xF0\x9F\x9F\xA6",
 	}
 }

@@ -40,9 +40,9 @@ func (b Board) Display() {
 		for _, cell := range row {
 			switch {
 			case cell:
-				p(b.GridDefinitions.GreenBlocks)
+				p(b.GridDefinitions.BlueBlocks)
 			default:
-				p(b.GridDefinitions.BrownBlocks)
+				p(b.GridDefinitions.RedBlocks)
 			}
 		}
 		p("\n")
