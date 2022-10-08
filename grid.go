@@ -14,7 +14,7 @@ type Grid [][]bool
 
 var p = fmt.Printf
 
-func MakeWorld(d GridDefinitions) *Board {
+func MakeWBoard(d GridDefinitions) *Board {
 	board := new(Board)
 	w := make(Grid, d.Height)
 	for i := range w {
